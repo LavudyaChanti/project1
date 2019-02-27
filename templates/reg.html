@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    h1
+    {
+        text-align:center;
+        color:red;
+    }
+    </style>
+<script language="JavaScript">
+    function fun1()
+    {
+        if(document.getElementById("t1").value=="")
+        {
+            alert("Please enter userid");
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+</script>
+</head>
+<body bgcolor="yellow">
+        <h1>SignUp  Form</h1>
+        <form name="f1" action="{% url 'regprocess' %}" onsubmit="return fun1()">
+            UserId:<input type="text" name="n1" id="t1"><br><br>
+            Password:<input type="password" name="n2"><br><br>
+            Re-Password:<input type="password" name="rp"><br><br>
+            FullName:<input type="text" name="n3"><br><br>
+            MailId:<input type="email" name="n4"><br><br>
+            Address:<input type="text" name="n5"><br><br>
+            <input type="submit" value="Register">
+        </form>
+</body>
+</html>
