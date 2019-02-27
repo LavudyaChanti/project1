@@ -1,0 +1,113 @@
+what/why/how to use git?
+------------------------
+git is a vcs(version control system) tool
+
+scm/vcs:
+---------
+scm	->	Source Code Mgmt
+vcs	->	Version Control System
+
+	To maintain a multiple versions of a file or directory
+
+Day1:
+-------
+	Ur Webiste
+
+	home.html	about.html	
+
+Day2:
+-------
+	Ur Webiste
+
+	home.html	about.html	signin.html	signup.html
+
+Day10:
+-------
+	Ur Webiste
+
+	home.html	about.html	signin.html(modified) signup.html	gallary.html
+
+VCS tools:
+----------
+1.Free	=>svn/git
+2.Paid	=>stash/p4/clear case/bit keeper
+
+
+Why VCS?:
+-----------
+	To track different versions of file or directory
+Who is this?
+-------------
+
+	All programers,developers,system admin,etc,..
+
+Use in which files?
+--------------------
+All text files like .java,.py,.html,...
+
+Where it cannot be used?
+-------------------------------
+	images,videos,sound files,..
+
+GIT:
+==
+
+Git is an indispensable part of modern software development. 
+It is a "version control system" which can be thought of as an extremely powerful version of track changes 
+in Microsoft Word or Google Docs. 
+With git, 
+	1.you can collaborate with other developers, 
+	2.track all your work via commits,
+	3.revert to any previous version of your code even if you accidentally delete something important!
+
+Install Git On Windows you should download Git from git site. 
+
+Once installed, we need to do a one-time system setup to configure it 
+by declaring the name and email address you want associated with all your Git commits.
+
+Checking :
+===========
+	git	--version
+
+Procedure:
+===========
+Within the command line console type the following two lines. 
+Make sure to update them your name and email address.
+
+> git config --global user.name "Your Name"
+> git config --global user.email "yourname@email.com"
+
+You can always change these configs later if you desire by retyping the same commands 
+with a new name or email address.
+
+The first step is to initialize (or add) git to our repository.
+
+	$ git init
+
+If you then type git status you’ll see a list of changes since the last git commit. 
+Since this is our first commit, this list is all of our changes so far.
+
+	$ git status
+
+
+We next want to add all changes by using the command add -A and then commit the 
+changes along with a message describing what has changed.
+
+	$ git add -A
+	$ git commit -m 'initial commit'
+
+
+
+To modify ur code into git:
+============================
+
+git push -u origin master
+
+
+https://github.com/LavudyaChanti/app1.git
+
+
+
+
+
+
